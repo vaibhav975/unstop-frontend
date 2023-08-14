@@ -1,0 +1,174 @@
+<mat-card>
+  <mat-card-content>
+    <div>
+      <div class="navbar">
+        <h1 id="animateButton" class="text-2xl cursor-pointer" style="font-size: 20px; font-weight: 700; display: flex; font-style: normal; color: var(--text-100, #1C4980);">  
+          <img class="mobile-view" src="assets/segment.svg" alt="menu"> Assessment</h1>
+        <span class="vl website-view"></span>
+        <span class="m1 website-view">My Assessment</span>
+      </div>
+      <div class="mobile-view" style="justify-content: space-around; padding: 10px">
+        <span style="color: var(--secondary-1, #0073E6); font-size: 14px; font-weight: 500;">My Assessment</span>
+        <span style="color: var(--secondary-1, #0073E6); font-size: 14px; font-weight: 500;">Unstop Assessment</span>
+      </div>
+      <div class="l1">
+        <hr />
+      </div>
+    </div>
+    <div>
+      <mat-accordion class="mobile-score-card">
+        <span class="header website-view">Assessment Overview</span>
+        <mat-expansion-panel [expanded]="isOpen">
+          <div class="assignment-overview" style="margin: -26px -35px;" >
+      
+            <div class="overview" >
+              <!-- total assessment -->
+              <div  style="display: flex;">
+                <div class="mobile-view-width" style="border: 1px solid #DADCE0; border-radius: 10px 0px 0px 10px; padding: 10px; display: flex; flex-direction: column; justify-content: space-around;">
+                  <div style="font-size: 14px; font-weight: 600; font-style: normal;">Total Assessment</div>
+                  <div style="display: flex; font-size: 20px; font-weight: 700; font-style: normal; font-family: Inter; color: var(--text-100, #1C4980)">
+                    <img src= "assets/view.svg " alt="view menu" />
+                    <span>34</span>
+                  </div>
+                </div> 
+                <div  class="mobile-view-width  mobile-view" style= "border: 1px solid #DADCE0; border-radius: 0px 10px 10px 00px; padding: 20px; display: flex; flex-direction: column; justify-content: space-around; width: 15%;">
+                  <div style="font-size: 14px; font-weight: 600; font-style: normal; color: var(--text-100, #1C4980)">Total purpose</div>
+                  <div style="display: flex;">
+                    <img src="assets/total purpose link.svg" alt="total purpose" />
+                    <span style="display: flex; align-items: center; font-size: 20px; font-weight: 700; font-style: normal; color: var(--text-100, #1C4980)">11</span>
+                  </div>
+                </div>
+              </div>
+              <!-- candidates -->
+              <div class="mobile-view-width-2" style="border: 1px solid #DADCE0; border-radius: 0px 0px 0px 00px; padding: 20px; display: flex; flex-direction: column; gap: 10px; width: 30%;">
+                <div style="font-size: 14px; font-weight: 600; font-style: normal;">Candidates</div>
+                <div style="display: flex; gap: 10px;">
+                  <div>
+                    <img src="assets/candidates.svg" alt="candidate" />
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 5px; border-right: 1px solid #DADCE0; padding-right: 20px">
+                    <div>
+                      <span style="font-size: 20px; font-weight: 700; font-style: normal; color: var(--text-100, #1C4980)">11,145</span>
+                      <span style="font-size: 12px; font-weight: 500; font-style: normal; color: #05C165;">+89</span>
+                    </div>
+                    <div style="font-size: 12px; font-weight: 500; font-style: normal; color: var(--text-100, #1C4980)">Total Candidate</div>
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <div>
+                      <span style="font-size: 20px; font-weight: 700; font-style: normal; color: var(--text-100, #1C4980)">1,14</span>
+                      <span style="font-size: 12px; font-weight: 500; font-style: normal; color: #05C165;">+89</span>
+                    </div>
+                    <div style="font-size: 12px; font-weight: 500; font-style: normal; color: var(--text-100, #1C4980)">who Attempted</div>
+                  </div>
+                </div>
+              </div>
+              <!-- candidate source  -->
+              <div class="mobile-view-width-2" style="border: 1px solid #DADCE0; border-radius: 0px 0px 0px 00px; padding: 20px; display: flex; flex-direction: column; gap: 10px; width: 40%;">
+                <div style="font-size: 14px; font-weight: 600; font-style: normal; color: var(--text-100, #1C4980)">Candidate Source</div>
+                <div style="display: flex; gap: 10px;">
+                  <div>
+                    <img src="assets/candidate source.svg" alt="csndidate source"> 
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 5px; border-right: 1px solid #DADCE0; padding-right: 20px">
+                    <div>
+                      <span style="font-size: 20px; font-weight: 700; font-style: normal; color: var(--text-100, #1C4980)">11,000</span>
+                      <span style="font-size: 12px; font-weight: 500; font-style: normal; color: #05C165;">+89</span>
+                    </div>
+                    <div style="font-size: 12px; font-weight: 500; font-style: normal; color: var(--text-100, #1C4980)">Email</div>
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 5px; border-right: 1px solid #DADCE0; padding-right: 20px">
+                    <div>
+                      <span style="font-size: 20px; font-weight: 700; font-style: normal; color: var(--text-100, #1C4980)">145</span>
+                      <span style="font-size: 12px; font-weight: 500; font-style: normal; color: #05C165;">+89</span>
+                    </div>
+                    <div style="font-size: 12px; font-weight: 500; font-style: normal; color: var(--text-100, #1C4980)">Social Share</div>
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <div>
+                      <span style="font-size: 20px; font-weight: 700; font-style: normal; color: var(--text-100, #1C4980)">145</span>
+                      <span style="font-size: 12px; font-weight: 500; font-style: normal; color: #05C165;">+89</span>
+                    </div>
+                    <div style="font-size: 12px; font-weight: 500; font-style: normal; color: var(--text-100, #1C4980)">Unique Link</div>
+                  </div>
+                </div>
+              </div>
+              <!-- total purpose  -->
+              <div  class="website-view" style= "border: 1px solid #DADCE0; border-radius: 0px 10px 10px 00px; padding: 20px; display: flex; flex-direction: column; justify-content: space-around; width: 15%;">
+                <div style="font-size: 14px; font-weight: 600; font-style: normal; color: var(--text-100, #1C4980)">Total purpose</div>
+                <div style="display: flex;">
+                  <img src="assets/total purpose link.svg" alt="total purpose" />
+                  <span style="display: flex; align-items: center; font-size: 20px; font-weight: 700; font-style: normal; color: var(--text-100, #1C4980)">11</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div>
+      <div style="display: flex; justify-content: space-between;">
+        <span class="header">My Assessment</span>
+        <div class="mobile-view" style="gap: 20px; display: flex;">
+          <img src="assets/search.svg" alt="search">
+          <img src="assets/filter.svg" alt="filter">
+          <img (click)="toggleExpansionPanel()" src="assets/bar_chart.svg" alt=" score bar">
+        </div> 
+      </div>
+      <div style="display: flex; flex-wrap: wrap">
+        <mat-card (click)="openDialog()" class="new-assessment" style=" border-radius: 12px; border: 1px dashed var(--system-stroke-2, #DADCE0); background: var(--system-background, #F6F8FA);">
+          <mat-card-content class="new-assessment-content">
+            <div class="circle">
+              <img src="assets/add.svg" alt="add button" />
+            </div>
+            <div class="header" style="padding: 0px;">New Assessment</div>
+            <div class="header" style="font-size: 13px; padding: 0px;">
+              From here you can add questions of multiple types like MCQs,
+              subjective (text or paragraph)!
+            </div>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="new-assessment" *ngFor="let i of [1, 2, 3, 4, 5]">
+          <mat-card-content>
+            <div class="card-image">
+              <div>
+                <div><img src="assets/briefcase.svg" alt="briefcase" /></div>
+                <div class="card-content">
+                  <div class="header" style="padding: 0px">Math Assessment</div>
+                  <div class="job-title">
+                    <span class="header" style="font-size: 18px; padding: 0px;" >Job</span>
+
+                    <img src="assets/calendar.svg" alt="calender" />
+                    <span style="font-size: 12px; font-weight: 500; font-style: normal; color: var(--primary-50, #8DA4BF);">20 Apr 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img src="assets/3 dot.svg" alt="3 dot" />
+              </div>
+            </div>
+            <hr style=" stroke-width: 1px; stroke: var(--system-stroke-2, #DADCE0);" />
+            <div class="seperate-button">
+              <div class="c1">
+                <div>
+                  <div style="font-size: 14px; font-weight: 600; font-style: normal; color: var(--text-100, #1C4980);">00</div>
+                  <div style="font-size: 12px; font-weight: 500; font-style: normal; color: var(--text-100, #1C4980);">Duration</div>
+                </div>
+                <div>
+                  <div style="font-size: 14px; font-weight: 600; font-style: normal; color: var(--text-100, #1C4980);">00</div>
+                  <div style="font-size: 12px; font-weight: 500; font-style: normal; color: var(--text-100, #1C4980);">Questions</div>
+                </div>
+              </div>
+              <div class="c2">
+                <div class="share-btn">
+                  <button style="align-items: center; display: flex; border-radius: 50px; "> <img src="assets/link.svg" alt="link">Share</button>
+                </div>
+                <div class="user-ball">LP</div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

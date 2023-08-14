@@ -1,0 +1,59 @@
+<div class="new-form" style="width: 591px;">
+  <div class="mobile-view-form"
+    style="padding: 30px; display: flex; justify-content: space-between; font-size: 20px; font-weight: 600; font-family: Inter;">
+    <span>Create New Assessment</span>
+    <span>
+      <mat-icon>cancel</mat-icon>
+    </span>
+  </div>
+  <hr>
+  <div class="mobile-view-form" style="padding: 20px 30px;">
+    <div style="display: flex; flex-direction: column; gap: 5px;">
+      <mat-label style="font-size: 16px; font-weight: 500; color: var(--text-100, #1C4980);">Name of
+        Assessment</mat-label>
+      <div> <input
+          style="height: 50px; width: 100%; border: 1px solid var(--system-stroke-2, #DADCE0); border-radius: 8px;"
+          matInput> </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 5px; margin-top: 20px;">
+      <label style="font-size: 16px; font-weight: 500; color: var(--text-100, #1C4980);">Purpose of the Test is</label>
+      <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-select>
+          <mat-option>First option</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 5px; margin-top: 20px;">
+      <label style="font-size: 16px; font-weight: 500; color: var(--text-100, #1C4980);">Description</label>
+      <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <span style="font-size: 16px; font-weight: 500; color: var(--text-100, #1C4980); border-radius: 8px 0px;">Skills</span>
+    <div style="display: flex; padding: 16px; flex-direction: column; gap: 10px; align-items: flex-start; border-radius: 8px 8px 0px 0px ;
+                border: 1px solid var(--system-divider, #DDE5EA);">
+      <mat-chip-list aria-label="Fish selection">
+        <mat-chip style="background: var(--accent-blue-light, #DDEDFF);">UI/UX and Design
+          <mat-icon>cancel</mat-icon></mat-chip>
+
+        <mat-chip style="background: var(--accent-blue-light, #DDEDFF);">Web Development
+          <mat-icon>cancel</mat-icon></mat-chip>
+
+        <mat-chip style="background: var(--accent-blue-light, #DDEDFF);">No. of Questions
+          <mat-icon>cancel</mat-icon></mat-chip>
+
+        <mat-chip style="background: var(--accent-blue-light, #DDEDFF);">Designer
+          <mat-icon>cancel</mat-icon></mat-chip>
+      </mat-chip-list>
+    </div>
+    <input style="height: 50px; width: 100%; border: 1px solid var(--system-stroke-2, #DADCE0); border-radius: 0px;"
+        matInput>
+    <div style="display: flex; flex-direction: column; gap: 5px; margin-top: 20px;">
+      <mat-label style="font-size: 16px; font-weight: 500; color: var(--text-100, #1C4980);">Duration Of Assessment</mat-label>
+      <div> <input style="height: 50px; width: 100%; border: 1px solid var(--system-stroke-2, #DADCE0); border-radius: 8px;" matInput> </div>
+    </div>
+  </div>
+</div>

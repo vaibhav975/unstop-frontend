@@ -1,0 +1,71 @@
+.sidemenu {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 992px; */
+  /* width: 8vw; */
+  padding: 16px 20px 20px 30px;
+}
+.seperator {
+  border-bottom: 2px dotted rgb(77, 78, 79);
+  margin: 0 1vw;
+  width: 70%;
+  position: relative;
+  padding-bottom: 40px;
+}
+.side-btn {
+  color: black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+.side-btn:hover {
+  cursor: pointer;
+}
+.active {
+  background-color: rgba(59, 131, 246, 0.306);
+  color: rgb(34, 107, 224);
+  border: 2px solid rgba(4, 67, 168, 0.5);
+  border-radius: 7px;
+}
+.dashboard {
+  margin-top: 25px;
+}
+.admin {
+  display: flex;
+  height: 12px;
+  padding: 2px 4px;
+  align-items: center;
+  font-size: 10px;
+  gap: 6px;
+  border-radius: 22px;
+  border: 1px solid var(--accent-new-red, #d63500);
+  background: var(--accent-red-light, #fbebea);
+}
+
+/* website view */
+.website-view {
+  display: flex !important;
+}
+
+/* mobile view */
+.mobile-view {
+  display: none !important;
+}
+.sidemenu{
+    display: override !important;
+}
+
+@media screen and (max-width: 800px) {
+  .website-view {
+    display: none !important; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .mobile-view {
+    display: flex !important;
+  }
+}

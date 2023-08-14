@@ -1,0 +1,26 @@
+/* mat-form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+} */
+/* .option{
+display: flex;
+padding: 6px 8px 6px 10px;
+justify-content: flex-end;
+align-items: center;
+gap: 2px;
+border-radius: 22px;
+background: var(--accent-blue-light, #DDEDFF);
+} */
+
+@media screen and (max-width: 800px) {
+    
+    .new-form{
+        width: auto !important;
+        /* margin-bottom: 0px !important; */
+    }
+    .mobile-view-form{
+        padding: 5px !important;
+    }
+  }

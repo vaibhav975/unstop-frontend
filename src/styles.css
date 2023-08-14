@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(236, 239, 243);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-bottom-sheet-container{
+    margin-bottom: 100px;   
+}
+
+@media screen and (max-width: 800px) {
+    .mat-bottom-sheet-container{
+        margin-bottom: 0px;   
+    }  
+}

@@ -48,6 +48,20 @@
   background: var(--accent-red-light, #fbebea);
 }
 
+@media screen and (max-width: 800px) {
+  .mobile-side-view{
+    display: flex;
+    
+  }
+  
+}
+
+/* website view */
+.website-view{
+  display:flex !important;
+
+}
+
 /* website view */
 .website-view {
   display: flex !important;

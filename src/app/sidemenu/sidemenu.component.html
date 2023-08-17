@@ -1,6 +1,6 @@
-<div class="sidemenu" >
+<div class="sidemenu">
     <div class="dashboard side-btn" [ngClass]="{'active':tab =='dashboard'}" (click)="changeTab('dashboard')">
-        <div>
+        <div class="mobile-side-view">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="currentColor">
                 <g>
                     <path
@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="Assessment side-btn" [ngClass]="{'active':tab =='assessment'}" (click)="changeTab('assessment')">
-        <div routerLink="assessment">
+        <div routerLink="assessment" class="mobile-side-view">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                 <mask id="mask0_0_871" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
                     <rect y="0.5" width="20" height="20"></rect>
@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="My-Library side-btn" [ngClass]="{'active':tab =='library'}" (click)="changeTab('library')">
-        <div>
+        <div class="mobile-side-view">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                 <mask id="mask0_0_877" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
                     <rect y="0.5" width="20" height="20"></rect>
@@ -53,7 +53,7 @@
     <div class="admin" style="margin: 10px;">Admin</div>
     <div class="Round-status side-btn" [ngClass]="{'active':tab =='round-status'}" (click)="changeTab('round-status')"
         style="gap: 6px;">
-        <div>
+        <div class="mobile-side-view">
             <div>
                 <img style="width: 20px; height: 20px;" src="assets/link.svg">
             </div>

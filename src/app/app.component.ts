@@ -1,42 +1,3 @@
-// import { Component } from '@angular/core';
-// import { HamburgerService } from './hamburger.service';
-
-// @Component({
-//   selector: 'app-root',
-//   templateUrl: './app.component.html',
-//   styleUrls: ['./app.component.css']
-// })
-// export class AppComponent {
-//   title:string = 'unstop-frontend';
-//   isSidePanelOpen: boolean = false ;
-
-//   sideMenuMode:string = 'side';
-//   innerWidth: any;
-
-//   constructor( private hamburgerService: HamburgerService) {
-//     this.hamburgerService.isOpen$.subscribe((isOpen: boolean) => {
-//       console.log("isOpen " + isOpen)
-//       this.isSidePanelOpen = isOpen;
-//     });
-//     this.innerWidth = (window.screen.width) + "px";
-//     console.log("innerWidth " + this.innerWidth)
-//     if(this.innerWidth < "800px")
-//     this.toggleSideMode();
-//   }
-
-//   toggleSideMode():void {
-//     if(this.innerWidth < "800px"){
-//       this.sideMenuMode = "over";}
-//       else {
-//         this.sideMenuMode = "side";
-//       }
-//       console.log("toggle");
-    
-//     }
-
-// }
-
-
 import { Component, OnInit, HostListener } from '@angular/core';
 import { HamburgerService } from './hamburger.service';
 
@@ -83,9 +44,6 @@ export class AppComponent implements OnInit {
     
     // console.log("toggle");
     console.log("toggle - innerWidth: " + this.innerWidth + ", sideMenuMode: " + this.sideMenuMode);
-
-    
-
   }
 
   updateSideMode(): void {

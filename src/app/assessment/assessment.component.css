@@ -82,11 +82,11 @@
 }
 
 .job-title{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding: 1px;
-    margin: 1px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 1px;
+  margin: 1px;
 }
 
 .seperate-button{
@@ -149,7 +149,7 @@
 
   }
   .assignment-overview{
-    margin: -20px -62px -27px -44px  !important;
+    margin: -20px -62px -27px -44px !important;
   }
   
 }

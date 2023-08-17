@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NewformComponent } from '../newform/newform.component';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { MatAccordion } from '@angular/material/expansion';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { HamburgerService } from '../hamburger.service';
 
 
 
@@ -12,8 +14,9 @@ import { MatAccordion } from '@angular/material/expansion';
 })
 export class AssessmentComponent implements OnInit {
   isOpen: boolean = true;
+  
 
-  constructor(public dialog: MatBottomSheet) {}
+  constructor(public dialog: MatBottomSheet, private hamburgerService: HamburgerService ) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(NewformComponent);
@@ -35,12 +38,11 @@ export class AssessmentComponent implements OnInit {
     this.isOpen = false;
   }
 
-  // expansioPanel(): void {
-  //   if (this.isOpen) {
-  //     this.accordion!.openAll();
-  //   } else {
-  //     this.accordion!.closeAll();
-  //   }
-  // }
+  toggleHamburger(): void {
+    this.hamburgerService.toggle();
+  }
+
+
+ 
 
 }

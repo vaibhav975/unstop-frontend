@@ -1,5 +1,5 @@
 <mat-drawer-container class="container">
-  <mat-drawer mode="side" opened><app-sidemenu></app-sidemenu></mat-drawer>
+  <mat-drawer [mode] = "sideMenuMode" [opened] = "isSidePanelOpen" ><app-sidemenu></app-sidemenu></mat-drawer>
   <mat-drawer-content><app-assessment></app-assessment></mat-drawer-content>
   <mat-drawer-content><app-newform></app-newform></mat-drawer-content>
 </mat-drawer-container>

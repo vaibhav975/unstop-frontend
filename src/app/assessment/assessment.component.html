@@ -3,7 +3,7 @@
     <div>
       <div class="navbar">
         <h1 id="animateButton" class="text-2xl cursor-pointer" style="font-size: 20px; font-weight: 700; display: flex; font-style: normal; color: var(--text-100, #1C4980);">  
-          <img class="mobile-view" src="assets/segment.svg" alt="menu"> Assessment</h1>
+          <img class="mobile-view" (click)="toggleHamburger()" src="assets/segment.svg" alt="menu"> Assessment</h1>
         <span class="vl website-view"></span>
         <span class="m1 website-view">My Assessment</span>
       </div>
@@ -18,7 +18,7 @@
     <div>
       <mat-accordion class="mobile-score-card">
         <span class="header website-view">Assessment Overview</span>
-        <mat-expansion-panel [expanded]="isOpen">
+        <mat-expansion-panel [expanded]="isOpen" style="margin: 10px;">
           <div class="assignment-overview" style="margin: -26px -35px;" >
       
             <div class="overview" >
@@ -128,7 +128,7 @@
           </mat-card-content>
         </mat-card>
 
-        <mat-card class="new-assessment" *ngFor="let i of [1, 2, 3, 4, 5]">
+        <mat-card class="new-assessment" style="padding: 12px;" *ngFor="let i of [1, 2, 3, 4, 5]">
           <mat-card-content>
             <div class="card-image">
               <div>
